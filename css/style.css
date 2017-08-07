@@ -1,0 +1,233 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.wrapper {
+    width: 1146px;
+    padding: 1px 27px;
+    margin: 0 auto;
+}
+.header-container {
+    width: 100%;
+    height: 115px;
+}
+.logo-container {
+    float: left;
+    width: 160px;
+}
+.main-nav {
+    float: left;
+    width: 500px;
+}
+.first-nav {
+    font-size: 0;
+    padding: 0;  
+}
+.first-nav li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-left: 26px;
+}
+.first-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2)
+}
+.user-block-wrapper {
+    float: right;
+    width: 400px;
+}
+.user-block {
+    list-style: none;
+    vertical-align: top;
+    font-size: 0;
+    padding: 0;
+}
+.user-block li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14;
+    padding-left: 30px;
+}
+.search-icon-container {
+    position: relative;
+    width: 31px;
+    height: 31px;
+    background-color: #a1b5aa;
+    border: 1px transparent #ffffff;
+    border-radius: 50%;
+}
+.search-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+.enter-icon-container {
+    position: relative;
+    width: 91px;
+    height: 32px;
+    background-image: url("../photo/Подложка1.png");
+}
+.cart-icon-container {
+    position: relative;
+    width: 117px;
+    height: 32px;
+    background-image: url("../photo/Подложка2.png");
+}
+.contacts-area {
+    width: 200px;
+    margin-left: auto;
+    color: #ffffff;
+}
+.icon-position {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 20px;
+}
+.contact-telephone {
+    font-size: 22px;
+}
+.big-ice {
+    width: 100%;
+    height: 400px;
+    background-color: green;
+}       
+.slider-buttons {
+    position: absolute;
+    top: 100px;
+}
+.slider-buttons {
+    position: absolute;
+    top: 500px;
+}
+.first-promotion {    
+    float: left;
+    width: 500px;
+    background-color: red;
+}
+.second-promotion {
+    float: left;
+    width: 500px;
+    background-color: blue;
+}
+.big-hit-1 {
+    float: left;
+    width: 150px;
+    background-color: pink;
+}
+.big-hit-2 {
+    float: left;
+    width: 150px;
+    background-color: lightblue;
+}
+.big-hit-3 {
+    float: left;
+    width: 150px;
+    background-color: #eee;
+}
+.big-hit-4 {
+    float: left;
+    width: 150px;
+    background-color: yellow;
+}
+.slider-content {
+    display: none;
+}
+#slider-toggle-1:checked ~ .background-view #slider-content-1 {
+  display: block;
+  background-color: #849d8f;
+}
+#slider-toggle-2:checked ~ .background-view #slider-content-2 {
+  display: block;
+  background-color: #8996a6;
+}
+#slider-toggle-3:checked ~ .background-view #slider-content-3 {
+  display: block;
+  background-color: #9d8b84;
+}
+#slider-toggle-1:checked ~ .background-view {
+  background: #849d8f;
+}
+#slider-toggle-2:checked ~ .background-view {
+  background: #8996a6;
+}
+#slider-toggle-3:checked ~ .background-view {
+  background: #9d8b84;
+}
+#slider-toggle-1:checked ~ .background-view [for=slider-toggle-1] {
+  background-color:green;
+}
+#slider-toggle-2:checked ~ .background-view [for=slider-toggle-2] {
+  background-color:green;
+}
+#slider-toggle-3:checked ~ .background-view [for=slider-toggle-3] {
+  background-color:green;
+}
+.slider-toggle-1 {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+.text-description-1 {
+    float: left;
+    width: 500px;
+    background-color: indianred;
+
+}
+.text-description-2 {
+    float: left;
+    width: 500px;
+    background-color: hotpink;
+}
+.news-container {
+    float: left;
+    width: 500px;
+    background-color: navy;
+}
+.email-container {
+    float: left;
+    width: 500px;
+    background-color: gold;
+}
+.feedback-container {
+    width: 200px;
+    height: 200px;
+    background-color: rosybrown;
+    margin: 0 left;
+}
+.wrapper-footer {
+    width: 1260px;
+    height: 100px;
+    background-color: lightcyan;
+}
+.social-icons {
+    float: left;
+    width: 200px;
+    background-color: peru;
+}
+.for-suppliers {
+    float: left;
+    width: 500px;
+    background-color: greenyellow;
+}
+.logo-bottom {
+    float: left;
+    width: 400px;
+    background-color: honeydew;
+}
+label {
+    display: inline-block;
+}
