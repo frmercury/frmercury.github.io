@@ -8,7 +8,8 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+    color: #ffffff;
 }
 .wrapper {
     width: 1146px;
@@ -34,7 +35,7 @@ body {
 }
 .first-nav {
     font-size: 0;
-    padding: 0;  
+    padding: 0; 
 }
 .first-nav li {
     display: inline-block;
@@ -46,8 +47,9 @@ body {
 }
 .first-nav a {
     text-decoration: none;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2)
+
 }
 .user-block-wrapper {
     float: right;
@@ -107,7 +109,6 @@ body {
     height: 100px;
     padding-top: 70px;  /*????????? Почему отступ от самого верха*/
     margin-left: auto;
-    color: #ffffff;
 }
 .contact-style {
     margin: 0;
@@ -123,12 +124,12 @@ body {
 .slider {
     position: relative;
     width: 1146px;
-    height: 670px;
+    height: 520px;  
 }
 .slider-buttons {
     position: absolute;
     bottom: 45px;
-    left: 5px;
+    left: 0;
     font-size: 0;
 }
 .slider-buttons label {
@@ -144,7 +145,7 @@ body {
 .slider-content {
     position: relative;
     width: 800px;
-    top:400px;
+    top: 270px;
     margin: 0 auto 0 auto;
     text-align: center;
 }
@@ -154,64 +155,27 @@ body {
     font-size: 56px;
 }
 .slider-content button {
-    width: 200px;
-    height: 50px;
+    width: 273px;
+    height: 68px;
     margin-top: 30px;
     background-color: rgb(239, 94, 63);
     border: 0 solid #ffffff;
     border-radius: 30px;
-    color: #ffffff;
     font-weight: bold;
-    font-size: 22px;
-}
-
-/*---------PROMOTIONS----------*/
-
-.first-promotion {    
-    float: left;
-    width: 550px;
-    background-color: salmon;
-}
-.second-promotion {
-    float: left;
-    width: 550px;
-    background-color: blue;
-    margin-left: 46px;
-}
-.big-hit-1 {
-    float: left;
-    width: 150px;
-    background-color: pink;
-}
-.big-hit-2 {
-    float: left;
-    width: 150px;
-    background-color: lightblue;
-}
-.big-hit-3 {
-    float: left;
-    width: 150px;
-    background-color: #eee;
-}
-.big-hit-4 {
-    float: left;
-    width: 150px;
-    background-color: yellow;
+    font-size: 32px;
+    color: #ffffff;
 }
 .slider-content {
     display: none;
 }
 #slider-toggle-1:checked ~ .background-view #slider-content-1 {
   display: block;
-  background-color: #849d8f;
 }
 #slider-toggle-2:checked ~ .background-view #slider-content-2 {
   display: block;
-  background-color: #8996a6;
 }
 #slider-toggle-3:checked ~ .background-view #slider-content-3 {
   display: block;
-  background-color: #9d8b84;
 }
 #slider-toggle-1:checked ~ .background-view {
   background: #849d8f;
@@ -222,6 +186,18 @@ body {
 #slider-toggle-3:checked ~ .background-view {
   background: #9d8b84;
 }
+#slider-toggle-1:checked ~ .background-view .wrapper {
+  background: url("../photo/1-Мороженко 1.png") no-repeat 273px 82px,
+    url("../photo/1-Мороженко 2.png") no-repeat 588px 125px;
+}
+#slider-toggle-2:checked ~ .background-view .wrapper {
+  background: url("../photo/2-Мороженко 1.png") no-repeat 273px 82px,
+    url("../photo/2-Мороженко 2.png") no-repeat 588px 125px;
+}
+#slider-toggle-3:checked ~ .background-view .wrapper {
+  background: url("../photo/3-Мороженко 1.png") no-repeat 273px 82px,
+    url("../photo/3-Мороженко 2.png") no-repeat 588px 125px;
+}
 #slider-toggle-1:checked ~ .background-view [for=slider-toggle-1] {
   background-color: #ffffff;
 }
@@ -231,31 +207,120 @@ body {
 #slider-toggle-3:checked ~ .background-view [for=slider-toggle-3] {
   background-color: #ffffff;
 }
+
+
+/*---------PROMOTIONS----------*/
+
+.promotion {
+    float: left;
+    position: relative;
+    width: 560px;
+    height: 230px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.promotion h3 {
+    font-size: 35px;
+    margin: 15px 0 20px 15px;
+}
+.promotion p {
+    font-size: 18px;
+    margin: 15px;
+}
+.first-promotion {    
+    background: url("../photo/Малиновый фон.png"), salmon;
+}
+.second-promotion {
+    background: url("../photo/Шоколадный фон.png"), brown;
+    margin-left: 25px;
+}  
+.button-want {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 170px;
+    height: 45px;
+    background-color: #e74f37;
+    border: 0 solid black;
+    border-radius: 30px;
+    color: #ffffff;  /*--------Почему не распространяется цвет от боди----------*/
+}
+
+/*---------BIG-HITS----------*/
+
+.hits-container {
+    margin: 40px 0;
+}
+.hits-style-all {
+    float: left;
+    width: 270px;
+    height: 270px;
+    margin-left: 20px;
+}
+.hits-style-all:first-child {
+    margin: 0;
+}
+
+/*---------DESCRIPTION--------- -->*/
+
+.description {
+    width: 100%;
+    height: 305px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: url("../photo/Вафля фон.png"), beige;
+    border-radius: 15px;
+    color: black;
+}
+.description h3{
+    margin: 0;
+    font-size: 24px;
+}
 .text-description-1 {
     float: left;
     width: 500px;
-    background-color: indianred;
 }
 .text-description-2 {
     float: left;
     width: 500px;
-    background-color: hotpink;
 }
-.news-container {
+
+/*---------EMAIL-BLOCK-NEWS--------- -->*/
+
+.news-email {
     float: left;
-    width: 500px;
-    background-color: navy;
+    position: relative;
+    width: 560px;
+    height: 230px;
+    border-radius: 15px;
+    margin: 40px 0;
+    color: black;
+}
+.news-container {    
+    background: url("../photo/Клубничный фон.png"), white;
 }
 .email-container {
-    float: left;
-    width: 500px;
-    background-color: gold;
+    background: url("../photo/Почтовый фон.png"), url("../photo/Подложка почта.png"); /*&&&&?????*/
+    margin-left: 25px;
+}
+
+/* ------MAP------- */
+
+.map-container {
+    position: relative;
+    width: 1146px;
+    height: 430px;
+    background: url("../photo/Пин.png") no-repeat;
+    /*ВОПРОС С ОТРИЦАТЕЛЬНЫМ МАРЖИНОМ*/
 }
 .feedback-container {
-    width: 200px;
-    height: 200px;
-    background-color: rosybrown;
-    margin: 0 left;
+    position: absolute;
+    right: 25px;
+    top: 65px;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    color: black;
 }
 
 /* ------FOOTER------- */
@@ -263,7 +328,6 @@ body {
 .wrapper-footer {
     width: 100%;
     height: 100px;
-    background-color: lightcyan;
 }
 .social-icons {
     float: left;
