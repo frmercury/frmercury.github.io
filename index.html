@@ -41,8 +41,9 @@
                         <li class="search-area">
                             <a href="">
                                 <div class="search-icon-container">
-                                    <img class="search-icon" src="photo/Лупа.png" alt="search">
+                                    <img class="search-icon icon-position" src="photo/search-icon.png" alt="search">
                                 </div>
+                                    <!--SPRITE-ICON-->
                             </a>
                             <div class="search-dropdown hidden">
                                 <form action="" method="GET">
@@ -52,11 +53,12 @@
                             </div>
                         </li>
                         <li class="enter-area">
-                            <a href="">Вход
+                            <a href="">
                                 <div class="enter-icon-container">
-                                    <img class="enter-icon icon-position" src="photo/Вход.png" alt="enter">
+                                    <img class="enter-icon icon-position" src="photo/login-icon.png" alt="enter">
                                 </div>
-                                <!--SPRITE-ICON-->
+                                    <!--SPRITE-ICON-->
+                                <span class="user-text">Вход</span>
                                 <form action="" class="hidden" method="POST">
                                     <input type="email" value="Электронная почта">
                                     <input type="password" value="Пароль">
@@ -66,40 +68,41 @@
                                             <input type="submit" value="Войти">
                                         </div>
                                         <div class="login-actions">
-                                            <a href="">Забыли пароль?</a>
-                                            <a href="">Новая регистрация</a>
+                                            <a href=""><span>Забыли пароль?</span></a>
+                                            <a href=""><span>Новая регистрация</span></a>
                                         </div>
                                     </div>
                                 </form>
                             </a>
                         </li>
                         <li class="cart-area">
-                            <a href=""><span>Пусто</span>
+                            <a href="">
                                 <div class="cart-icon-container">
-                                    <img class="cart-icon icon-position" src="photo/Корзина.png" alt="cart">
+                                    <img class="cart-icon icon-position" src="photo/cart-icon.png" alt="cart">
+                                </div>
                                     <!--SPRITE-ICON-->
-                                    <div class="cart-table-area hidden">
-                                        <div class="cart-product-table">
+                                <span class="user-text">Пусто</span>
+                                <div class="cart-table-area hidden">
+                                    <div class="cart-product-table">
                                         <form action="" method="">
-                                        <div class="cart-product-row">
-                                            <div class="product-row1"></div>
-                                            <div class="product-row2"></div>
-                                        </div>
-                                        <div class="product-cell">
-                                            <div class="product-cell1"></div>
-                                            <div class="product-cell2"></div>
-                                            <div class="product-cell3"></div>
-                                            <div class="product-cell4"></div>
-                                            <div class="product-cell5"></div>
-                                        </div>
-                                        </div>
-                                        <div class="product-price">750
-                                            <button type="submit" value="Оформить заказ">
-                                        </div>
+                                            <div class="cart-product-row">
+                                                <div class="product-row1"></div>
+                                                <div class="product-row2"></div>
+                                            </div>
+                                            <div class="product-cell">
+                                                <div class="product-cell1"></div>
+                                                <div class="product-cell2"></div>
+                                                <div class="product-cell3"></div>
+                                                <div class="product-cell4"></div>
+                                                <div class="product-cell5"></div>
+                                            </div>
+                                            <div class="product-price">750</div>
+                                            <button type="submit" value="Оформить заказ"></button>
+                                        </form>
                                     </div>
                                 </div>
                             </a>
-                        </li>
+                        </li>   
                     </ul>   
                 </section>
                 <div class="contacts-area">
@@ -116,11 +119,11 @@
                     </div>
                     <div class="slider-content" id="slider-content-1">
                         <h2>Крем-брюле и пломбир <br> с малиновым джемом</h2>
-                        <button button type="button">Давайте оба!</button>
+                        <button type="button">Давайте оба!</button>
                     </div>
                     <div class="slider-content" id="slider-content-2">
                         <h2>Шоколадный пломбир и лимонный сорбет</h2>
-                        <button button type="button">Давайте оба!</button>
+                        <button type="button">Давайте оба!</button>
                     </div>
                     <div class="slider-content" id="slider-content-3">
                         <h2>Пломбир с помадкой и клубничный щербет</h2>
@@ -128,7 +131,7 @@
                     </div>
                 </section>
 
-                <!---------PROMOTIONS--------- -->
+                <!--PROMOTIONS-->
 
                 <section class="section-for-free clearfix">
                     <article class="promotion first-promotion">
@@ -141,7 +144,7 @@
                         <p class="small-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
                             присыпки совершенно бесплатно.
                         </p>
-                        <button button type="button" class="button-want">Хочу шоколадки!</button>
+                        <button type="button" class="button-want">Хочу шоколадки!</button>
                     </article>
                 </section>
 
@@ -149,29 +152,37 @@
 
 
                 <section class="hits-container clearfix">
-                    <article class="big-hit-1 hits-style-all">
-                        <div><img src="photo/1.png" alt=""></div>
-                        <div class="small-hit-1">хит</div>
-                        <div class="price-1"><span id="">310</span></div>
+                    <article class="big-hit">
+                        <div>
+                            <img src="photo/1.png" alt="">
+                        </div>
+                        <div class="small-hit">
+                            <img src="photo/hit.png" alt="">
+                        </div>
+                        <div class="hit-price">
+                            <img src="photo/hit-price.png" alt="">                               
+                        </div>
                         <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                     </article>
-                    <article class="big-hit-2 hits-style-all">
+                    <article class="big-hit">
                         <div><img src="photo/2.png" alt=""></div>
-                        <div class="small-hit-2"></div>
-                        <div class="price-2"><span>380</span></div>
+                        <div class="small-hit">
+                            <img src="photo/hit.png" alt="">
+                        </div>
+                        <div class="hit-price"><span>380</span></div>
                         <p>Сливочно-кофейное с кусочками шоколада</p>
                     </article>
-                    <article class="big-hit-3 hits-style-all">
+                    <article class="big-hit">
                         <div><img src="photo/3.png" alt=""></div>
-                        <div class="small-circles-3"></div>
-                        <div class="price-3"></div>
+                        <div class="small-circles"></div>
+                        <div class="hit-price"></div>
                         <p>Сливочно-клубночное с присыпкой из белого шоколада</p>
                     </article>
-                    <article class="big-hit-4 hits-style-all">
+                    <article class="big-hit">
                         <div><img src="photo/4.png" alt=""></div>
                         <div><img src="" alt=""></div>
-                        <div class="small-hit-4"></div>
-                        <div class="price-4"><span>355</span></div>
+                        <div class="small-hit"></div>
+                        <div class="hit-price"><span>355</span></div>
                         <p>Сливочное с крем-брюле с карамельной подливкой</p>
                     </article>      
                 </section>
@@ -232,24 +243,22 @@
                     </div>
                 </section>
             </main>
-            <footer>
-                <div class="wrapper-footer clearfix">
-                    <ul class="social-icons">
-                        <li class="social1 social"></li>
-                        <li class="social2 social"></li>
-                        <li class="social3 social"></li>
-                        <li class="social4 social"></li>
-                    </ul>
-                    <ul class="for-suppliers">
-                        <li><a href="" class="bold">Для поставщиков</a></li>
-                        <li><a href="">Новые документы</a></li>
-                        <li><a href="">О производстве</a></li>
-                        <li><a href="">Экологические стандарты</a></li>
-                    </ul>
-                    <div class="logo-bottom">
-                        <a href="index.html"><img src="photo/logo.png" alt="gllacy-shop"></a>
-                        <p>Сделано в HTML Academy 2017</p>
-                    </div>
+            <footer class="wrapper-footer clearfix">
+                <ul class="social-icons">
+                    <li><a href="" class="social"><img src="photo/twitter.png" alt=""></a></li>
+                    <li class="social"><img src="photo/fb.png" alt=""><a href=""></a></li>
+                    <li class="ssocial"><img src="photo/vk.png" alt=""><a href=""></a></li>
+                    <li class="social"><img src="photo/instagram.png" alt=""><a href=""></a></li>
+                </ul>
+                <ul class="for-suppliers">
+                    <li><a href="" class="bold">Для поставщиков</a></li>
+                    <li><a href="">Новые документы</a></li>
+                    <li><a href="">О производстве</a></li>
+                    <li><a href="">Экологические стандарты</a></li>
+                </ul>
+                <div class="logo-bottom">
+                    <a href="index.html"><img src="photo/HTML.png" alt="gllacy-shop"></a>
+                    <p>Сделано в HTML Academy 2017</p>
                 </div>
             </footer>
         </div>

@@ -11,10 +11,23 @@ body {
     font-size: 18px;
     color: #ffffff;
 }
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+button {
+    cursor: pointer;
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    opacity: 0.988;
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
 .wrapper {
     width: 1146px;
     padding: 0 27px;
     margin: 0 auto;
+    background-color: red;
 }
 
 /* ------HEADER------- */
@@ -51,13 +64,18 @@ body {
     color: #ffffff;
 
 }
+
+/*--------------------USER BLOCK-------------------------*/
+
 .user-block-wrapper {
     float: right;
-    width: 330px;
+    width: 333px;
     padding-top: 15px;
+
+/*УТОЧНИТЬ КОРРЕКТНОСТЬ ПОДГОНА РАЗМЕРОВ С ПОМОЩЬЮ КОНТЕЙНЕРА ТЕКСТА*/
+
 }
 .user-block {
-    list-style: none;
     vertical-align: top;
     font-size: 0;
     padding: 0;
@@ -65,56 +83,89 @@ body {
 .user-block li {
     display: inline-block;
     vertical-align: top;
-    font-size: 14;
-    padding-left: 30px;
+    height: 30px;   
+    margin-left: 30px;
 }
-.search-icon-container {
+.user-block a {
+    display: inline-block;
     position: relative;
-    width: 31px;
-    height: 31px;
-    background-color: #a1b5aa;
-    border: 0px transparent #ffffff;
-    border-radius: 50%;
+    height: 30px;
+    width: 150px;
+    background-color: rgba(255, 255 , 255, 0.4);
+    font-size: 14px;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
 }
-.search-icon {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%)
+.user-text {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+
+/*УТОЧНИТЬ КОРРЕКТНОСТЬ РАСПОЛОЖЕНИЯ ТЕКСТА*/
+
+.user-block div {
+    position: relative;
+    margin-left: 10px;
+}
+.user-block li:first-child div {
+    margin: 0;
 }
 .icon-position {
     position: absolute;
+    transform: translate(-50%, -50%);
     top: 50%;
-    transform: translateY(-50%);
-    padding-left: 20px;
+    left: 50%;
+}
+.user-block li:first-child a {
+    width: 30px;
+}
+.user-block li:nth-child(2) a {
+    width: 93px;
+}
+.user-block li:nth-child(3) a {
+    width: 120px;
+}
+
+/*УТОЧНИТЬ КОРРЕКТНОСТЬ ЗАДАНИЯ РАЗМЕРОВ ПОЛЕЙ ТЕКСТА*/
+
+
+.search-icon-container {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 .enter-icon-container {
-    position: relative;
-    width: 91px;
-    height: 32px;
-    background-color: #a1b5aa;
-    border: 0px transparent #ffffff;
-    border-radius: 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
 }
 .cart-icon-container {
-    position: relative;
-    width: 117px;
-    height: 32px;
-    background-color: #a1b5aa;
-    border: 0px transparent #ffffff;
-    border-radius: 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
 }
+
+/*-------------------CONTACT AREA---------------------*/
+
 .contacts-area {
     width: 200px;
-    height: 100px;
-    padding-top: 70px;  /*????????? Почему отступ от самого верха*/
+    height: 30px;
     margin-left: auto;
+    clear: both;
 }
 .contact-style {
     margin: 0;
+    /*margin-top: -20px;*/
     text-align: right;
     font-weight: bold;
 }
+
+/*УТОЧНИТЬ КОРРЕКТНОСТЬ ЗАДАНИЯ ОТРИЦАТЕЛЬНОГО МАРДЖИНА*/
+
+
 .contact-telephone {
     font-size: 22px;
 }
@@ -164,6 +215,7 @@ body {
     font-weight: bold;
     font-size: 32px;
     color: #ffffff;
+    outline: none;
 }
 .slider-content {
     display: none;
@@ -187,16 +239,13 @@ body {
   background: #9d8b84;
 }
 #slider-toggle-1:checked ~ .background-view .wrapper {
-  background: url("../photo/1-Мороженко 1.png") no-repeat 273px 82px,
-    url("../photo/1-Мороженко 2.png") no-repeat 588px 125px;
+  background: url("../photo/1-ice-2.png") no-repeat;
 }
 #slider-toggle-2:checked ~ .background-view .wrapper {
-  background: url("../photo/2-Мороженко 1.png") no-repeat 273px 82px,
-    url("../photo/2-Мороженко 2.png") no-repeat 588px 125px;
+  background: url("../photo/2-ice-2.png") no-repeat;
 }
 #slider-toggle-3:checked ~ .background-view .wrapper {
-  background: url("../photo/3-Мороженко 1.png") no-repeat 273px 82px,
-    url("../photo/3-Мороженко 2.png") no-repeat 588px 125px;
+  background: url("../photo/3-ice-2.png") no-repeat;
 }
 #slider-toggle-1:checked ~ .background-view [for=slider-toggle-1] {
   background-color: #ffffff;
@@ -251,14 +300,33 @@ body {
 .hits-container {
     margin: 40px 0;
 }
-.hits-style-all {
+.big-hit {
     float: left;
+    position: relative;
     width: 270px;
-    height: 270px;
+    height: 300px;
     margin-left: 20px;
 }
-.hits-style-all:first-child {
+.big-hit:first-child {
     margin: 0;
+}
+.big-hit p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+}
+.small-hit {
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    top: 10px;
+}
+.hit-price {
+    position: absolute;
+    width: 157px;
+    height: 39px;
+    bottom: 50px;
+
 }
 
 /*---------DESCRIPTION--------- -->*/
@@ -309,7 +377,7 @@ body {
     margin-top: 0;
 }
 .email-container {
-    background: url("../photo/Почтовый фон.png"), url("../photo/Подложка почта.png"); /*&&&&?????*/
+    background: url("../photo/subscribe.png");
     margin-left: 25px;
 }
 #sub {
@@ -337,10 +405,10 @@ body {
 
 .map-container {
     position: relative;
-    width: 1146px;
+    width: 1200px;
     height: 430px;
+    margin-left: -30px;
     background: url("../photo/Пин.png") no-repeat;
-    /*ВОПРОС С ОТРИЦАТЕЛЬНЫМ МАРЖИНОМ*/
 }
 .feedback-container {
     position: absolute;
@@ -366,31 +434,55 @@ body {
 /* ------FOOTER------- */
 
 .wrapper-footer {
-    width: 100%;
     height: 100px;
-}
-.social-wrapper {
-    float: left;
-    width: 300px;
+    padding: 10px;
 }
 .social-icons {
     font-size: 0;
+    float: left;
+    width: 300px;
 }
 .social-icons li {
     display: inline-block;
+    vertical-align: top;
     width: 30px;
     height: 30px;
     font-size: 14px;
-    background-color: red;
     margin: 5px;
 }
 .logo-bottom {
-    float: left;
+    float: right;
     width: 200px;
-    background-color: honeydew;
+}
+.logo-bottom  > * {
+    margin: 0;
+}
+.logo-bottom p {
+    font-size: 8px;
 }
 .for-suppliers {
     float: left;
-    width: 150px;
-    background-color: greenyellow;
+    width: 500px;
+    font-size: 0;
+}
+.for-suppliers li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 200px;
+    font-size: 14px;
+}
+.for-suppliers a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.for-suppliers li:first-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: -30px;
+    bottom: -3px;
+    background: url(../photo/heart-icon.png) 50% no-repeat;
 }
