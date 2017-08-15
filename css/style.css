@@ -239,13 +239,13 @@ button {
   background: #9d8b84;
 }
 #slider-toggle-1:checked ~ .background-view .wrapper {
-  background: url("../photo/1-ice-2.png") no-repeat;
+  background: url("../photo/1-ice-2.png") no-repeat 82px 0;
 }
 #slider-toggle-2:checked ~ .background-view .wrapper {
-  background: url("../photo/2-ice-2.png") no-repeat;
+  background: url("../photo/2-ice-2.png") no-repeat 82px 0;
 }
 #slider-toggle-3:checked ~ .background-view .wrapper {
-  background: url("../photo/3-ice-2.png") no-repeat;
+  background: url("../photo/3-ice-2.png") no-repeat 82px 0;
 }
 #slider-toggle-1:checked ~ .background-view [for=slider-toggle-1] {
   background-color: #ffffff;
@@ -344,13 +344,61 @@ button {
     margin: 0;
     font-size: 24px;
 }
-.text-description-1 {
-    float: left;
-    width: 500px;
+.text-description {
+    font-size: 0;
+    margin: 0 auto;
 }
-.text-description-2 {
-    float: left;
-    width: 500px;
+.text-description li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 475px;
+    margin: 15px 20px 15px 50px;
+    font-size: 16px;
+}
+.text-description li:nth-child(1)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: -60px;
+    top: 0;
+    background: url(../photo/ice-cream.png) no-repeat;
+}
+.text-description li:nth-child(2)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: -60px;
+    top: 0;
+    background: url(../photo/cow.png) no-repeat;
+}
+.text-description li:nth-child(3)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: -60px;
+    top: 0;
+    background: url(../photo/leaf.png) no-repeat;
+}
+.text-description li:nth-child(4)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: -60px;
+    top: 0;
+    background: url(../photo/temperature.png) no-repeat;
+}
+.text-description p {
+    margin: 0;
 }
 
 /*---------EMAIL-BLOCK-NEWS--------- -->*/
@@ -434,7 +482,7 @@ button {
 /* ------FOOTER------- */
 
 .wrapper-footer {
-    height: 100px;
+    height: 60px;
     padding: 10px;
 }
 .social-icons {
@@ -452,7 +500,7 @@ button {
 }
 .logo-bottom {
     float: right;
-    width: 200px;
+    width: 125px;
 }
 .logo-bottom  > * {
     margin: 0;

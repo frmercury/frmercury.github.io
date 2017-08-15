@@ -9,87 +9,101 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="header-conteiner">
+            <header class="header-container clearfix">
                 <div class="logo-container">
-                    <a href="index.html"><img src="" alt="gllacy-shop"></a>
+                    <a href="index.html"><img src="photo/logo.png" alt="gllacy-shop"></a>
                 </div>
-                <nav class="main-nav">
-                        <ul class="first-nav">
-                            <li>Каталог
-                                <ul class="second-nav">
-                                    <li><span class="bold">Новинки<span></li>
-                                    <li><a href="">Сливочное</a></li>
-                                    <li><a href="">Щербеты</a></li>
-                                    <li><a href="">Фруктовый лед</a></li>
-                                    <li><a href="">Мелорин</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">Доставка и оплата</a>
-                            </li>
-                            <li>
-                                <a href="">О компании</a>
-                            </li>
-                        </ul>
+                <nav class="main-nav clearfix">
+                    <ul class="first-nav">
+                        <li><a href="">Каталог</a>
+                            <ul class="second-nav hidden">
+                                <li class="bold">Новинки</li> 
+                                <li><a href="">Сливочное</a></li>
+                                <li><a href="">Щербеты</a></li>
+                                <li><a href="">Фруктовый лед</a></li>
+                                <li><a href="">Мелорин</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Доставка и оплата</a></li>
+                        <li>
+                            <a href="">О Компании</a>
+                        </li>
+                    </ul>
                 </nav>
-                <div class="user-block">
-                    <div class="search-area">
-                        <a href="" class="search-icon"></a>
-                    </div>
-                    <div>
-                        <form action="GET">
-                            <input type="text" value="Что ищем?">
-                            <input type="submit" class="hidden">
-                        </form>
-                    </div>
-                    <div class="enter-user">
-                        <img src="" alt="Enter">Вход
-                        <form action="POST">
-                            <input type="email" value="Электронная почта">
-                            <input type="password" value="Пароль">
-                            <div>
-                                <div>    
-                                    <input type="submit" value="Войти">
+                <section class="user-block-wrapper clearfix">
+                    <ul class="user-block">
+                        <li class="search-area">
+                            <a href="">
+                                <div class="search-icon-container">
+                                    <img class="search-icon icon-position" src="photo/search-icon.png" alt="search">
                                 </div>
-                                <div class="new-user">
-                                    <a href="">Забыли пароль?</a>
-                                    <a href="">Новая регистрация</a>
-                                </div>
+                                    <!--SPRITE-ICON-->
+                            </a>
+                            <div class="search-dropdown hidden">
+                                <form action="" method="GET">
+                                    <input type="text" value="Что ищем?">
+                                    <input type="submit" class="hidden">
+                                </form>
                             </div>
-                        </form>
-                    </div>
-                    <div class="cart">
-                        <a href="" class="cart"></a>
-                        <div>
-                            <div class="product-table">
-                                <div class="product-row">
-                                    <div class="product-cell"></div>
-                                    <div class="product-cell"></div>
-                                    <div class="product-cell"></div>
-                                    <div class="product-cell"></div>
-                                    <div class="product-cell"></div>
+                        </li>
+                        <li class="enter-area">
+                            <a href="">
+                                <div class="enter-icon-container">
+                                    <img class="enter-icon icon-position" src="photo/login-icon.png" alt="enter">
                                 </div>
-                                <div class="product-row">
-                                    <div class="product-cell"></div>
-                                    <div class="product-cell"></div>
-                                    <div class="product-cell"></div>
-                                    <div class="product-cell"></div>
-                                    <div class="product-cell"></div>
+                                    <!--SPRITE-ICON-->
+                                <span class="user-text">Вход</span>
+                                <form action="" class="hidden" method="POST">
+                                    <input type="email" value="Электронная почта">
+                                    <input type="password" value="Пароль">
+                                    <!---->
+                                    <div>
+                                        <div>    
+                                            <input type="submit" value="Войти">
+                                        </div>
+                                        <div class="login-actions">
+                                            <a href=""><span>Забыли пароль?</span></a>
+                                            <a href=""><span>Новая регистрация</span></a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </a>
+                        </li>
+                        <li class="cart-area">
+                            <a href="">
+                                <div class="cart-icon-container">
+                                    <img class="cart-icon icon-position" src="photo/cart-icon.png" alt="cart">
                                 </div>
-                            </div>
-                            <div class="product-price">750</div>
-                            <form action="">
-                                <button type="submit" value="Оформить заказ">
-                            </form>
-                        </div>
-                    </div>
+                                    <!--SPRITE-ICON-->
+                                <span class="user-text">Пусто</span>
+                                <div class="cart-table-area hidden">
+                                    <div class="cart-product-table">
+                                        <form action="" method="">
+                                            <div class="cart-product-row">
+                                                <div class="product-row1"></div>
+                                                <div class="product-row2"></div>
+                                            </div>
+                                            <div class="product-cell">
+                                                <div class="product-cell1"></div>
+                                                <div class="product-cell2"></div>
+                                                <div class="product-cell3"></div>
+                                                <div class="product-cell4"></div>
+                                                <div class="product-cell5"></div>
+                                            </div>
+                                            <div class="product-price">750</div>
+                                            <button type="submit" value="Оформить заказ"></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>   
+                    </ul>   
+                </section>
+                <div class="contacts-area">
+                    <p class="contact-time contact-style">С 10 до 20, ежедневно</p>
+                    <p class="contact-telephone contact-style">8 812 450-25-25</p>
                 </div>
-                <div class="contacts">
-                <p>С 10 до 20, ежедневно</p>
-                <p>8 812 450-25-25</p>
-                </div>
-            </div>
-        </header>
+            </header>
         <main>
             <div class="page-directory">
                <ul>
@@ -220,13 +234,12 @@
                 </ul>        
             </section>
         </main>
-        <footer>
-            <div class="wrapper-footer">
+            <footer class="wrapper-footer clearfix">
                 <ul class="social-icons">
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="" class="social"><img src="photo/twitter.png" alt=""></a></li>
+                    <li class="social"><img src="photo/fb.png" alt=""><a href=""></a></li>
+                    <li class="ssocial"><img src="photo/vk.png" alt=""><a href=""></a></li>
+                    <li class="social"><img src="photo/instagram.png" alt=""><a href=""></a></li>
                 </ul>
                 <ul class="for-suppliers">
                     <li><a href="" class="bold">Для поставщиков</a></li>
@@ -235,11 +248,10 @@
                     <li><a href="">Экологические стандарты</a></li>
                 </ul>
                 <div class="logo-bottom">
-                    <img src="" alt="">
+                    <a href="index.html"><img src="photo/HTML.png" alt="gllacy-shop"></a>
                     <p>Сделано в HTML Academy 2017</p>
                 </div>
-            </div>
-        </footer>
+            </footer>
     </div>
 </body>
 </html>
