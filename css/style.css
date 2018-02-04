@@ -277,10 +277,10 @@ button {
     margin: 15px;
 }
 .first-promotion {    
-    background: url("../photo/Малиновый фон.png"), salmon;
+    background: url("../photo/crimson.png"), salmon;
 }
 .second-promotion {
-    background: url("../photo/Шоколадный фон.png"), brown;
+    background: url("../photo/chocolate.png"), brown;
     margin-left: 25px;
 }  
 .button-want {
@@ -336,7 +336,7 @@ button {
     height: 305px;
     padding: 20px;
     box-sizing: border-box;
-    background: url("../photo/Вафля фон.png"), beige;
+    background: url("../photo/waffle.png"), beige;
     border-radius: 15px;
     color: black;
 }
@@ -413,20 +413,24 @@ button {
     color: black;
 }
 .news-container {    
-    background: url("../photo/Клубничный фон.png"), white;
+    background: url("../photo/strawberry.png") no-repeat;
 }
 .news-container p {
     margin: 15px 0 5px 20px;
 }
 .news-container p:nth-child(3) {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: underline;
     margin-top: 0;
 }
 .email-container {
-    background: url("../photo/subscribe.png");
+    background: url("../photo/subscribe.png") no-repeat;
     margin-left: 25px;
+    font-size: 18px;
+}
+.email-container p {
+    margin: 15px 0 5px 20px;
 }
 #sub {
     width: 150px;
@@ -445,7 +449,6 @@ button {
     border-radius: 7px;
     color: grey;
     padding-left: 10px;
-
 }
 
 
@@ -456,7 +459,7 @@ button {
     width: 1200px;
     height: 430px;
     margin-left: -30px;
-    background: url("../photo/Пин.png") no-repeat;
+    background: url("../photo/pin.png") no-repeat;
 }
 .feedback-container {
     position: absolute;
