@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Barber shop</title>
+    <link rel="stylesheet" href="fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">      
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/title.png">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">    
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="logo">
+                <a href="index-1.html"><img src="images/logo.png" alt="logo"></a> 
+            </div>
+            <div class="nav">
+                <div class="hidden mobile-menu">                    
+                    <i class="fas fa-align-justify"></i>
+                    <span>Меню</span>
+                </div>                
+                <ul>                    
+                    <li>
+                        <a href="index-4.html">ПРАЙС-ЛИСТ</a>
+                    </li>
+                    <li>
+                        <a href="index-2.html">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="index-5.html">КОНТАКТЫ</a>
+                    </li>
+                    <li>
+                        <a href="#" id="modal-start">ОТЗЫВЫ</a>
+                    </li>
+                </ul>           
+            </div>        
+            <div class="user-panel">
+                <i class="fas fa-sign-in-alt user-icon"></i>
+                <a href="#">ВХОД</a>
+                <div class="modal-login">
+                    <form action="#" method="post">
+                        <div class="modal-email">
+                            <input type="email" placeholder="Электронная почта" name="login">
+                        </div>
+                        <div class="modal-pass">
+                            <input type="password" placeholder="Пароль" name="password">
+                        </div>
+                        <div class="clearfix">
+                            <button class="btn btn-login" type="submit">Войти</button>
+                            <div class="additional-menu">
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>   
+<!-- BODY -->
+    <div class="body-wrapper">
+    <div class="body">
+        <div class="page-nav">
+            <div class="page-name">
+                <h1>СРЕДСТВА ДЛЯ УХОДА</h1>            
+            </div>
+            <div>
+                <div class="bread-crumbs">
+                    <div><a href="#"><span>ГЛАВНАЯ</span></a></div>            
+                    <div class="bread-crumbs-cubs"></div>
+                    <div><a href="#"><span>МАГАЗИН</span></a></div>            
+                    <div class="bread-crumbs-cubs"></div>
+                    <div><a href="#" class="active-links"><span>СРЕДСТВА ДЛЯ УХОДА</span></a></div>                
+                </div>
+            </div>
+        </div>
+        <div class="general-container clearfix">
+            <div class="sort-container">
+                <div class="hidden mobile-sort-menu">                    
+                    <i class="fas fa-align-justify"></i>
+                    <span>Sort</span>
+                </div>
+                <div class="sort-show">
+                    <div class="sort-container-top clearfix">                    
+                        <h2>ПРОИЗВОДИТЕЛИ:</h2>
+                        <div class="sort-form-top">
+                            <form class="sort-inputs-top">
+                                <input type="checkbox" id="checkbox">
+                                <label id="checkbox" class="checkbox"></label><br>
+                                <input type="checkbox" id="checkbox1">
+                                <label id="checkbox1" class="checkbox"></label><br>
+                                <input type="checkbox" id="checkbox2">
+                                <label id="checkbox2" class="checkbox"></label><br>
+                                <input type="checkbox" id="checkbox3">
+                                <label id="checkbox3" class="checkbox"></label><br>
+                                <input type="checkbox" id="checkbox4">
+                                <label id="checkbox4" class="checkbox"></label><br>
+                                <input type="checkbox" id="checkbox5">
+                                <label id="checkbox5" class="checkbox"></label><br>
+                            </form>
+                            <div class="checkbox-description">
+                                <span>BAXTER 0F CALIFORNIA</span><br>
+                                <span>MR NATTY</span><br>
+                                <span>SUAVECITO</span><br>
+                                <span>MALIN+GOETZ</span><br>
+                                <span>MURRAY'S</span><br>
+                                <span>AMERICAN CREW</span><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort-container-bottom">
+                        <h2>ГРУППЫ ТОВАРОВ:</h2>
+                        <div class="sort-form-top">                    
+                            <form class="sort-inputs-bottom">
+                                <input type="radio" id="radio-btn">
+                                <label id="radio-btn" class="radio-btn"></label><br>
+                                <input type="radio" id="radio-btn1">
+                                <label id="radio-btn1" class="radio-btn"></label><br>
+                                <input type="radio" id="radio-btn2">
+                                <label id="radio-btn2" class="radio-btn"></label><br>
+                            </form>
+                            <div class="radio-btn-description">
+                                <span>БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</span>
+                                <span>СРЕДСТВА ДЛЯ УХОДА</span>
+                                <span>АКСЕССУАРЫ</span>            
+                            </div>
+                        </div>
+                    </div>
+                    <button class="buttons">ПОКАЗАТЬ</button>
+                </div>
+            </div>            
+                
+            <div class="items-general-container">
+                <ul class="items-container-top">                    
+                    <li class="each-item-container">
+                        <a href="index-3.html" class="product-link">
+                            <img src="images/item-1.jpg">
+                            <div class="items-description-container">                            
+                                <span>Набор для путешествий<br>«BAXTER OF CALIFORNIA»</span>                        
+                                <div class="price-btn-container">
+                                    <div class="price-container">
+                                        <span>2 900 ₽</span>                        
+                                    </div>
+                                    <button class="buttons items-btn">КУПИТЬ</button>
+                                </div>
+                            </div>
+                        </a> 
+                    </li>                                       
+                    <li class="each-item-container">                        
+                        <img src="images/item-2.jpg">
+                        <div class="items-description-container">
+                            <span>Увлажняющий кондиционер<br>«BAXTER OF CALIFORNIA»</span>
+                            <div class="price-btn-container">
+                                <div class="price-container">
+                                    <span>750 ₽</span>                        
+                                </div>
+                                <button class="buttons items-btn">КУПИТЬ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="each-item-container">                        
+                        <img src="images/item-3.jpg">
+                        <div class="items-description-container">
+                            <span>Гель для волос<br>«SUAVECITO»</span>                        
+                            <div class="price-btn-container">
+                                <div class="price-container">
+                                    <span>290 ₽</span>                        
+                                </div>
+                                <button class="buttons items-btn">КУПИТЬ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="each-item-container">
+                        <img src="images/item-4.jpg">
+                        <div class="items-description-container">
+                            <span>Глина для укладки волос<br>«American Crew»</span>
+                            <div class="price-btn-container">
+                                <div class="price-container">
+                                    <span>500 ₽</span>                        
+                                </div>
+                                <button class="buttons items-btn">КУПИТЬ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="each-item-container">                       
+                        <img src="images/item-5.jpg">
+                        <div class="items-description-container">
+                            <span>Гель для волос<br>«American Crew»</span>
+                            <div class="price-btn-container">
+                                <div class="price-container">
+                                    <span>300 ₽</span>                        
+                                </div>
+                                <button class="buttons items-btn">КУПИТЬ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="each-item-container">                        
+                        <img src="images/item-6.jpg">
+                        <div class="items-description-container">
+                            <span>Набор для бритья<br>«BAXTER OF CALIFORNIA»</span>                        
+                            <div class="price-btn-container">
+                                <div class="price-container">
+                                    <span>3 900 ₽</span>                        
+                                </div>
+                                <button class="buttons items-btn">КУПИТЬ</button>
+                            </div>
+                        </div>
+                    </li> 
+                </ul>                
+                <div class="sort-pages">
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                    </ul>
+                </div>              
+            </div>            
+        </div>
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer-wrapper">
+        <div Class="main-footer">
+            <div class="contacts-footer">
+                <span>БАРБЕРШОП "БОРОДИНСКИЙ"</span>
+                <span>АДРЕСС: Г.САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ, Д. 19/8</span>
+                <a href="index.html"><span>КАК НАС НАЙТИ?</span></a>
+                <span>ТЕЛЕФОН: +7 (495) 666-02-66</span>
+            </div>
+            <div class="social-container">
+                <span>ДАВАЙ-ТЕ ДРУЖИТЬ!</span>
+                <div class="links-container">
+                    <div class="social-links vk">                
+                        <a href="http://vk.com"><i class="fab fa-vk social-img"></i></a>
+                    </div>
+                    <div class="social-links fb">                
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f social-img img-fb"></i></a>
+                    </div>
+                    <div class="social-links inst">                
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram social-img img-inst"></i></a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="created-by-container">
+                <span>РАЗРАБОТАНО:</span>
+                <div class="creater-container"><a href="#"><div><</div>epam<div>></div></div>
+            </div>
+        </div> 
+    </div>
+    <!-- HIDDEN FEEDBACK -->
+
+    <div class="modal-feedback" id="modal-feedback">
+        <span class="modal-feedback__close" id="modal-close"></span>
+        <h1 class="modal-feedback__window-name uppercase">Feedback</h1>            
+        <form action="#" method="post">
+            <div class="name">                    
+                <span class="field-name">Name</span>
+                <input type="text" name="name" class="field required" data-error="Name is mandatory field!">
+            </div>
+            <div class="phone">                    
+                <span class="field-name">Phone</span>
+                <input type="tel" name="phone" class="field required" data-error="Phone is mandatory field!"> 
+            </div>
+            <div class="email">                    
+                <span class="field-name">Email</span>
+                <input type="email" name="email" class="field required" data-error="E-mail is mandatory field!">
+            </div>
+            <div class="b-textarea">                    
+                <span class="b-textarea__textarea-name field-name">Text</span>                    
+                <textarea class="textarea-field field"></textarea>                    
+            </div>
+            <button id="button" class="modal-btn uppercase" type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="overlay" class="overlay"></div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>  
+</body>
+</html>
